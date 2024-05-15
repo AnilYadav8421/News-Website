@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgb(220, 219, 219);
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(201, 201, 245);
+    padding: 15px;
+}
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+.links ul li{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.links ul li:hover{
+    color: #fff;
+    
+}
+.nav-items.active{
+    color: red;
+}
+p{
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+.search-input{
+    padding: 3px 7px;
+    border: none;
+    outline: none;
+}
+.search-button{
+    padding: 3px 7px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: var(--accent-color);
+}
+.search-button:hover{
+    background-color: var(--secondary-text-color);
+}
+
+/* Container */
+.container{
+    height: 85vh;
+    width: 85%;
+    margin: auto;
+}
+.card{
+    background-color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    /* padding: 15px; */
+    border-radius:10px ;
+    text-align: left;
+    transition: all 0.2s ease;
+}
+.card:hover{
+    transform: translateY(-4px);
+}
+
+.card-containers{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 60px;
+}
+.card-header img{
+    width: 100%;
+    height: 200px;
+    /* object-fit: cover; */
+}
+.card-content{
+    padding: 15px;
+}
+.card-content p{
+    color: rgb(78, 77, 77);
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.card-content h4{
+    font-size: 15px;
+    line-height: 19px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+   
+}
+.card-content h6{
+    color: #2294ed;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#" onclick="reload()"><img src="img/logo.png" width="50px"></a>
+        </div>
+        <div class="links">
+            <ul>
+                <li class="nav-items" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                <li class="nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                <li class="nav-items" id="health" onclick="onNavItemClick('health')">Health</li>
+                <li class="nav-items" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+            </ul>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchIpt" class="search-input" placeholder="e.g. IPL">
+            <button id="searchBtn" class="search-button">Search</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-containers" id="card-container">
+        </div>
+    </div>
+    
+    <template id="template-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="img/logo.png" id="news-img">
+            </div>
+            <div class="card-content">
+                <h4 id = "news-title">this is title</h4>
+                <p class= "news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi alias neque inventore et? Nihil, nesciunt illum. Praesentium provident cumque earum?</p>
+                <h6 class = "news-source" id="news-source">End Gadget | 26/08/2024</h6>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
