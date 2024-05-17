@@ -13,3 +13,4 @@ This project aims to create a user-friendly news website that displays news arti
 * News API
 
 # Screenshot
+![Screenshot 2024-05-17 194519](https://github.com/AnilYadav8421/News-Website/assets/138858484/60226988-5f37-445a-9086-0a917e8d85d1)
